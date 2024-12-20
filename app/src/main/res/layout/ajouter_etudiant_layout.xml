@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fee4d5">
+
+
+    <ImageView
+        android:id="@+id/designimage"
+        android:layout_width="234dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/titreajout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/top_backgrounds" />
+
+    <TextView
+        android:id="@+id/titreajout"
+        android:layout_width="302dp"
+        android:layout_height="62dp"
+        android:text="Ajouter Eudiant!"
+        android:textColor="#434d94"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="414dp"
+        android:layout_height="716dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/drawable_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Nom"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edNom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="entrer votre Nom"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/Prenom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Prenom"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edPrenom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="entrer votre prenom"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/emaill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Email"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edEEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="entrer votre mail"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Password"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edPPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="entrer votre mot de pass"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/master"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Master"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edmaster"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="votre Master"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/buttonAj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/drawable_bleu"
+                android:text="Ajouter"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

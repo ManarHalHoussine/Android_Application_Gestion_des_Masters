@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE3D4"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/main_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="170dp"
+        android:text="Welcome to\n Master's app!"
+        android:textColor="#434d94"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/drawable_white"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Email"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="entrer votre mail"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Password"
+                android:textColor="#a22f4e" />
+
+            <EditText
+                android:id="@+id/edPass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/drawable_red"
+                android:ems="10"
+                android:hint="entrer votre mot de pass"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/logButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/drawable_bleu"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:onClick="login"/>
+
+            <TextView
+                android:id="@+id/singupclic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="Don't have an Account? Signup"
+                android:textAlignment="center"
+                android:textColor="#434d94"
+                android:clickable="true"
+                android:onClick="Sing_up"
+                android:background="?android:attr/selectableItemBackground" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

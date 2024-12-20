@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fee4d5">
+
+
+    <ImageView
+        android:id="@+id/des"
+        android:layout_width="264dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toTopOf="@+id/TitreProf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/top_backgrounds" />
+
+    <TextView
+        android:id="@+id/TitreProf"
+        android:layout_width="373dp"
+        android:layout_height="96dp"
+        android:text="Ajouter Etudiant!"
+        android:textColor="#434d94"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lier2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="138dp"
+        tools:ignore="NotSibling" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="645dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="269dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/textprenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="Prenom :"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenomEtud"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter votre prenom"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/lier1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textnom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="Nom:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+            />
+
+            <EditText
+                android:id="@+id/nomEtud"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter votre nom"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/textmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="Email: "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/mailEtud"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Enter votre email"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/Master"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="Master :"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/masterEtud"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Enter votre master"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ajouter Etudiant"
+                android:background="@drawable/drawable_bleu"
+                />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycVie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <!-- layout_recycler_item.xml -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
